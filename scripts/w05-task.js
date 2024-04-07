@@ -6,6 +6,7 @@ let templeList = [];
 
 // Function: displayTemples()
 const displayTemples = (temples) => {
+    temples.sort((a, b) => a.templeName.localeCompare(b.templeName)); // Sort by temple name
     temples.forEach((temple) => {
         const article = document.createElement("article");
         
